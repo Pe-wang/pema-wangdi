@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accessing Form Elements by Name</title>
+</head>
+<body>
+    <form name="userForm">
+        Email: <input type="email" name="email" value="example@example.com"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <button type="button" onclick="getFormElements()">Submit</button>
+    </form>
+
+    <!-- Display output here -->
+    <div id="output"></div>
+
+    <script>
+        function getFormElements() {
+            // Accessing form elements using 'document.forms' and 'name' attribute
+            let email = document.forms["userForm"]["email"].value;
+            let password = document.forms["userForm"]["password"].value;
+
+            // Displaying the result in the div with id="output"
+            document.getElementById("output").innerHTML = "Email: " + email + "<br>Password: " + password;
+        }
+    </script>
+</body>
+</html>

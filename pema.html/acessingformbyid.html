@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Accessing Form Elements by ID</title>
+</head>
+
+<body>
+    <form id="myForm">
+        Name: <input type="text" id="name" value=“Tashi"><br><br>
+        Age: <input type="number" id="age" value=“20"><br><br>
+        <button type="button" onclick="getFormData()">Submit</button>
+    </form>
+
+    <script>
+        function getFormData() {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            console.log("Name: " + name);
+            console.log("Age: " + age);
+        }
+    </script>
+</body>
+
+</html>

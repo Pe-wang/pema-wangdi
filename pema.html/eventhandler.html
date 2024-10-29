@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <button id="myButton">Click me</button>
+    <p id="output"></p>
+
+    <script>
+        let button = document.getElementById("myButton");
+
+        button.onclick = function () {
+            document.getElementById("output").innerHTML =
+                "First Handler: Button clicked!";
+        };
+
+        button.onclick = function () {
+            document.getElementById("output").innerHTML =
+                "Second Handler: Button clicked!";
+        };
+    </script>
+</body>
+
+</html>
